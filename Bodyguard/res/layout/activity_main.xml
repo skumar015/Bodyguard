@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FCD207" >
+
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:text="SignUp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="172dp"
+        android:ems="10"
+      
+        android:hint="EnterUserName"
+          android:gravity="center"
+          android:padding="6dp"
+          android:textColor="#000000"
+        android:background="@drawable/round_corner"
+        android:inputType="textPersonName" >
+        
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="33dp"
+        android:gravity="center"
+         android:textColor="#000000"
+        android:background="@drawable/round_corner"
+        android:hint="ParmanentAddress"
+        android:padding="6dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignRight="@+id/editText3"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="31dp"
+         android:background="@drawable/round_corner"
+        android:text="Register"
+        android:textColor="#000000"
+        android:textSize="25dp" 
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/round_corner"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="UserNumber"
+        android:textColor="#000000"
+        android:inputType="phone"
+        android:digits="0123456789"
+        android:padding="6dp" />
+
+</RelativeLayout>
